@@ -5,9 +5,8 @@
 
 static void usage(const char* prog) {
     std::fprintf(stderr,
-        "Usage: %s --rootfs <path> -- <cmd> [args...]\n"
-        "  --rootfs <path>   root filesystem for the container\n"
-        "  --                separator; everything after is the command\n",
+        "Usage: %s --rootfs <path> <cmd> [args...]\n"
+        "  --rootfs <path>   root filesystem for the container\n",
         prog);
 }
 

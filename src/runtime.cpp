@@ -19,7 +19,7 @@ namespace runtime {
     namespace _detail
     {
         constexpr size_t kStack = 1 << 20;
-        constexpr std::uint64_t kDefaultFlags =  CLONE_NEWPID | CLONE_NEWNS  | CLONE_NEWUSER |
+        constexpr std::uint64_t kDefaultFlags =  CLONE_NEWPID | /*CLONE_NEWNS  |*/ CLONE_NEWUSER |
                                                 CLONE_NEWUTS | CLONE_NEWIPC | CLONE_NEWNET;
 
         template <typename F>
